@@ -66,12 +66,13 @@ setEmail("");
             <br />
             <br />
             <h3>select city</h3>
-           <select value={city} selected={(event)=>setCity(event.target.value)} name="city" id="city">
-                <option value="">select city</option>
-                <option value="dhangadhi">dhangadhi</option>
-                <option value="dipayal">dipayal</option>
-                <option value="ktm">ktm</option>
-            </select> 
+    <select value={city} onChange={(event) => setCity(event.target.value)} name="city" id="city">
+    <option value="">select city</option>
+    <option value="dhangadhi">dhangadhi</option>
+    <option value="dipayal">dipayal</option>
+    <option value="ktm">ktm</option>
+</select>
+
             <br />
             <br />
             <button >Submit</button>
